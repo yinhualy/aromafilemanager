@@ -28,7 +28,7 @@
  * headers
  */
 #include <linux/fb.h>
-#include <aroma.h>
+#include "../../aroma.h"
 #ifdef LIBAROMA_CONFIG_OPENMP
   #include <omp.h>
 #endif

@@ -100,9 +100,9 @@ void auido_about_dialog(AWINDOWP parent) {
   apng_close(&imlogo);
   //-- Init Window & Controls
   AWINDOWP hWin = aw(&bg);
-  ACONTROLP txtTitle = aclabel(hWin, cliX + imgP, titY, cliW - imgP, titH,
-                               AROMA_NAME " " AROMA_VERSION, 1, 1, 1,
-                               acfg()->winfg);
+  /*ACONTROLP txtTitle = aclabel(hWin, cliX + imgP, titY, cliW - imgP, titH,
+                               AROMA_NAME " (" AROMA_VERSION ")", 1, 1, 1,
+                               acfg()->winfg); */
   ACONTROLP txtCopy =
     aclabel(hWin, cliX + imgP, curY, cliW - imgP, txtH, AROMA_COPY, 0,
             1, 1,

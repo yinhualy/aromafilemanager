@@ -366,13 +366,14 @@ void LINUXFBDP_set_dpi(LIBAROMA_FBP me) {
     me->dpi = dpi_fallback;
   }
 #ifdef __ANDROID__
+char *sf_lcd =NULL;
   /* android dpi from default.prop/build.prop */
-  char * sf_lcd=libaroma_getprop("ro.sf.lcd_density",
-    libaroma_stream_file("/default.prop"), 1);
+  /*char * sf_lcd=libaroma_getprop("ro.sf.lcd_density",
+    libaroma_stream_file("/default.prop"), 1);*/
   if (sf_lcd==NULL){
     /* try /system/build.prop */
-    sf_lcd=libaroma_getprop("ro.sf.lcd_density",
-      libaroma_stream_file("/system/build.prop"), 1);
+  /*  sf_lcd=libaroma_getprop("ro.sf.lcd_density",
+      libaroma_stream_file("/system/build.prop"), 1);*/
   }
   if (sf_lcd!=NULL){
     int new_dpi = atoi(sf_lcd);

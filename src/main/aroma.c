@@ -56,7 +56,7 @@ void a_splash(char * spipe) {
   setlinebuf(acmd_pipe);
   //#-- Print Info Into Recovery
   fprintf(apipe(), "ui_print\n");
-  fprintf(apipe(), "ui_print " AROMA_NAME " version " AROMA_VERSION "\n");
+ // fprintf(apipe(), "ui_print " AROMA_NAME " version " AROMA_VERSION "\n");
   fprintf(apipe(), "ui_print\n");
   fprintf(apipe(), "ui_print " AROMA_COPY "\n");
   fprintf(apipe(), "ui_print\n");
